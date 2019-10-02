@@ -234,12 +234,12 @@ X_train, X_test, y_train, y_test = train_test_split(data_X, data_y, test_size=0.
 logreg = LogisticRegression()
 logreg.fit(X_train, y_train)
 
-
 --Decsion Tree
 
 Now we fit Decision tree algorithm on training data, predicting labels for validation dataset and printing the accuracy of the model using various parameters.
 
---from sklearn.tree import DecisionTreeClassifier  
+from sklearn.tree import DecisionTreeClassifier  
+--DecisionTreeClassifier(): This is the classifier function for DecisionTree. It is the main function for implementing the algorithms. 
 X_train, X_test, y_train, y_test = train_test_split(data_X, data_y, test_size=0.3, random_state=0)
 Dtree = DecisionTreeClassifier(criterion = 'entropy').fit(X_train,y_train)
 y_pred = Dtree.predict(X_test)
@@ -261,13 +261,7 @@ print(classification_report(y_test, y_pred))
    macro avg       0.73      0.74      0.73       174
 weighted avg       0.78      0.78      0.78       174
 
---DecisionTreeClassifier(): This is the classifier function for DecisionTree. It is the main function for implementing the algorithms. 
 
-criterion: It defines the function to measure the quality of a split. Sklearn supports “gini” criteria for Gini Index & “entropy” for Information Gain.
- By default, it takes “gini” value.
- 
- The Prediction Accuracy of 
-
-
-
-
+ --Accuracy of logistic regression classifier on Train test data set: 82.18 %
+ --Accuracy of logistic regression classifier on test set: 82.76 %
+ --The prediction accuracy is:  77.58620689655173 %
