@@ -1,6 +1,4 @@
 # Loan_approval_prediction
-A Bank is trying to create a Model to help them predict whether to grant loan to a customer.
-
 Data Science or data analytics is a process of analyzing large data set of data points 
 to get answer on questions related to data set.(data point is a discrete unit of information).In a general sense, any single fact is a data point
 
